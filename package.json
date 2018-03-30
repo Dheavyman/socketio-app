@@ -1,0 +1,37 @@
+{
+  "name": "socketio-app",
+  "version": "1.0.0",
+  "description": "Simple chat app",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --exec babel-node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dheavyman/socketio-app.git"
+  },
+  "keywords": [
+    "Socket.io"
+  ],
+  "author": "Justin Nebo <nebojustin@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dheavyman/socketio-app/issues"
+  },
+  "homepage": "https://github.com/Dheavyman/socketio-app#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "nodemon": "^1.17.2"
+  }
+}
