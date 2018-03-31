@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5500;
 
 app.use(logger('dev'));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 server.listen(PORT, () => {
   console.log(`server running on port ${PORT}`);
