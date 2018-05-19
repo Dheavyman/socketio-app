@@ -2,6 +2,7 @@ import express from 'express';
 import http from 'http';
 import path from 'path';
 import logger from 'morgan';
+import winston from 'winston';
 
 const app = express();
 const server = http.createServer(app);
@@ -12,5 +13,5 @@ app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, '../public')));
 
 server.listen(PORT, () => {
-  console.log(`server running on port ${PORT}`);
+  winston.info(`server running on port ${PORT}`);
 });
